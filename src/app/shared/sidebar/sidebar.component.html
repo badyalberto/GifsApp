@@ -1,0 +1,27 @@
+<!-- Sidebar Menu -->
+<div class="responsive-nav">
+  <i class="fa fa-bars" id="menu-toggle"></i>
+  <div id="menu" class="menu">
+    <i class="fa fa-times" id="menu-close"></i>
+    <div class="container">
+      <div class="author-content">
+        <h4 style="font-weight: 800">Gifs App</h4>
+      </div>
+      <div
+        style="
+          width: 80%;
+          height: 3px;
+          background-color: white;
+          margin: 0px auto;"
+      ></div>
+      <nav class="main-nav" role="navigation">
+        <ul class="main-menu" *ngFor="let busqueda of historial">
+          <li>
+            <a href="#" (click)="buscar(busqueda);">{{ busqueda | titlecase }}</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- end Sidbar-->

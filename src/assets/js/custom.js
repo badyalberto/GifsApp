@@ -1,5 +1,6 @@
-(function($) {
+$(function() {
   var toggle = document.getElementById("menu-toggle");
+  //var tools  = $('#menu-toggle');
   var menu = document.getElementById("menu");
   var close = document.getElementById("menu-close");
 
@@ -24,7 +25,7 @@
     }
   });
 
-  $(".owl-carousel").owlCarousel({
+  /*$(".owl-carousel").owlCarousel({
     items: 4,
     lazyLoad: true,
     loop: true,
@@ -72,5 +73,5 @@
   lightbox.option({
     resizeDuration: 200,
     wrapAround: true
-  });
-})(jQuery);
+  });*/
+});
